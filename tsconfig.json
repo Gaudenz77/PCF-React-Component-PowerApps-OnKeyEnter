@@ -1,0 +1,16 @@
+{
+  "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": true,
+    "skipLibCheck": true,
+    // "ignoreDeprecations": "6.0",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["powerapps-component-framework"]
+  },
+  "include": [
+    "EnterInputFinal/index.ts",
+    "EnterInput/EnterInputComponent.tsx",
+    "EnterInput/generated/**/*.d.ts"
+  ]
+}
